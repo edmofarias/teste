@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+Listagem
+
+<ul>
+{% for cliente in dados_pessoa %}
+    <li>{{ cliente.nome }} - {{ cliente.cpf }}</li>
+
+{% endfor %}
+</ul>
+
+{% endblock %}
